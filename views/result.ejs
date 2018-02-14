@@ -10,18 +10,18 @@
     <body>
         <section>
             <div class="scoreboard">
-                <h1>Hey <span><%= name %>! </span>Here are your scores:</h1>
+                <h1 class="animated fadeInDown">Hey <span><%= name %>! </span>Here are your scores:</h1>
                 <table>
                     <tbody>
-                        <tr>
+                        <tr class="animated lightSpeedIn" id="table-row-1">
                             <td class="table-left">Part One:</td>
                             <td class="table-right"><%= partOne %></td>
                         </tr>
-                        <tr>
+                        <tr class="animated lightSpeedIn" id="table-row-2">
                             <td class="table-left">Part Two:</td>
                             <td class="table-right"><%= partTwo %></td>
                         </tr>
-                        <tr>
+                        <tr class="animated lightSpeedIn" id="table-row-3">
                             <td class="table-left">Total:</td>
                             <td class="table-right"><%= grandSum %></td>
                         </tr>
@@ -30,7 +30,7 @@
             </div>
             <div class="container">
                 <div class="wrapper">
-                    <div class="meaning">
+                    <div class="meaning animated fadeInUp">
                         <h1>What does this mean?</h1>
                         <p><%= content %></p>
                     </div>
