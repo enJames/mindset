@@ -9,6 +9,6 @@ app.use(express.static('static-files'));
 
 mainController(app);
 
-app.listen(1300, (err) => {
+app.listen(1300, () => {
     console.log('Now live at 1300');
 });
