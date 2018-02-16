@@ -5,13 +5,11 @@ body {
     background-image: url('../img/bg_two.jpg');
     background-size: cover;
     background-attachment: fixed;
-        overflow: hidden;
 }
 .body-cover{
     background-color: rgba(10,20,50,.7);
-    position: static;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 section {
     text-align: center;
@@ -95,6 +93,11 @@ section {
     color: black;
     padding: 1pc;
     border-radius: 1pc;
+}
+/*For the form animation*/
+.quesOne, .quesTwo {
+    animation-duration: 1s;
+    animation-delay: .5s;
 }
 .ques {
     display: block;
@@ -188,9 +191,11 @@ button {
     text-align: left;
     transition: 1s;
 }
+/*
 #back {
     float: left;
 }
 #submitTwo {
     float: right;
 }
+*/

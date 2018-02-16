@@ -11,11 +11,13 @@ let serverResponse,
     nameInput = document.getElementById('name-input'),
     submitOne = document.getElementById('submitOne'),
     submitTwo = document.getElementById('submitTwo'),
-    back = document.getElementById('back'),
+    //back = document.getElementById('back'),
     ques_one = document.getElementById('ques_one'),
     ques_two = document.getElementById('ques_two'),
     partOneInput = document.getElementsByClassName('partOne'),
-    partTwoInput = document.getElementsByClassName('partTwo');
+    partTwoInput = document.getElementsByClassName('partTwo'),
+    quesOne = document.getElementsByClassName('quesOne'),
+    quesTwo = document.getElementsByClassName('quesTwo');
 
 introBtn.onclick = () => {
     introWrapper.style.left = '-150%';
@@ -25,8 +27,23 @@ introBtn.onclick = () => {
 proceed.onclick = () => {
     event.preventDefault();
     user_name = nameInput.value;
+
     name_form.style.left = '-150%';
     ques_one.style.right = '15%';
+
+    let i = 0;
+    let loopAnimate = () => {
+        setTimeout(() => {
+            quesOne[i].className += ' animated flipInX';
+            i++;
+
+            if (i < 4) {
+                loopAnimate();
+            }
+        }, 50);
+    }
+
+    loopAnimate();
 };
 
 submitOne.onclick = () => {
@@ -36,6 +53,19 @@ submitOne.onclick = () => {
 
     ques_one.style.right = '100%';
     ques_two.style.right = '0';
+
+    let i = 0;
+    let loopAnimate = () => {
+        setTimeout(() => {
+            quesTwo[i].className += ' animated flipInX';
+            i++;
+            if (i < 4) {
+                loopAnimate();
+            }
+        }, 20);
+    }
+
+    loopAnimate();
 };
 
 submitTwo.onclick = () => {
@@ -49,12 +79,13 @@ submitTwo.onclick = () => {
 
     sendUserResponse('/checkup', userResponse);
 };
-
+/*
 back.onclick = () => {
     event.preventDefault();
     ques_one.style.right = '15%';
     ques_two.style.right = '-100%';
 };
+*/
 
 let getUserResponse1 = () => {
 
