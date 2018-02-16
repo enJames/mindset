@@ -55,6 +55,9 @@ module.exports = app => {
     app.get('/', (req, res) => {
         res.render('index');
     });
+    app.get('/checkup', (req, res) => {
+        res.render('checkup');
+    });
     app.get('/result', (req, res) => {
         let request = req.query;
         let dehashed = cryptr.decrypt(request.key);
