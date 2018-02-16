@@ -1,0 +1,49 @@
+body {
+    background-image: url('../img/bg_one.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.head-wrapper{
+    position: absolute;
+    width: 80%;
+    top: 30%;
+    left: 9%;
+    text-align: center;
+    overflow: hidden;
+
+}
+.title-wrapper {
+    width: 70%;
+    margin: auto;
+    font-size: 1.5pc;
+    color: white;
+}
+.title-wrapper h1 {
+    font-family: arial black;
+    font-size: 4pc;
+}
+.title-wrapper p {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.btn-home {
+    margin-top: 6pc;
+}
+.btn-home button {
+    background-color: rgb(14,113,198);
+    border: none;
+    border-radius: 2pc;
+    font-size: 2pc;
+    color: white;
+    padding: .5pc 1pc;
+    background:
+}
+.name-form {
+    position: absolute;
+    top: -50%;
+}
+.wrapper {
+    overflow: hidden;
+    margin: auto;
+}

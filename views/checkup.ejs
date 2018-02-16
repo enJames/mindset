@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mindset Check Up</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/animate.css">
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel="stylesheet" href="/css/checkup.css">
+    </head>
+    <body>
+        <div class="body-cover">
+            <% include partials/nav.ejs %>
+            <section>
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="intro-wrapper">
+                            <h1>So excited to have you here!</h1>
+                            <p>The mindset quiz takes no more than a minute or two to complete. There are no right or wrong answers, just check the button that you think works best for you!</p>
+                            <div class="introDivBtn">
+                                <button id="intro-btn">Got it!</button>
+                            </div>
+                        </div>
+                        <div class="name-form">
+                            <form method="POST">
+                                <h1>Just a brief introduction!</h1>
+                                <label for="name">
+                                    <p>What is your name?</p>
+                                    <input type="text" name="name" id="user_name" placeholder="Your name">
+                                </label>
+                                <div class="nameDivBtn">
+                                    <button id="name-btn">Proceed</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="one_wrapper quesDiv" id="ques_one">
+                            <form method="POST">
+                                <label class="main-label" for="one_ques_one">
+                                    <div class="ques-wrapper">
+                                        <span class="ques">1) You can always change your talent a good amount, no matter how much you have.</span>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_one" value="1"><span class="options">Disagree big tme</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_one" value="2"><span class="options">Disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_one" value="3"><span class="options">Kind of disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_one" value="4"><span class="options">Kind of agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_one" value="5"><span class="options">Agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_one" value="6"><span class="options">Agree big time</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </label>
+                                <label class="main-label" for="one_ques_two">
+                                    <div class="ques-wrapper">
+                                        <span class="ques">2) I like work the best when it makes me think hard.</span>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_two" value="1"><span class="options">Disagree big tme</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_two" value="2"><span class="options">Disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_two" value="3"><span class="options">Kind of disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_two" value="4"><span class="options">Kind of agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_two" value="5"><span class="options">Agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_two" value="6"><span class="options">Agree big time</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </label>
+                                <label class="main-label" for="one_ques_three">
+                                    <div class="ques-wrapper">
+                                        <span class="ques">3) I like doing things that I'll learn from even if I make a lot of errors.</span>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_three" value="1"><span class="options">Disagree big tme</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_three" value="2"><span class="options">Disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_three" value="3"><span class="options">Kind of disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_three" value="4"><span class="options">Kind of agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_three" value="5"><span class="options">Agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_three" value="6"><span class="options">Agree big time</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+
+                                </label>
+                                <label class="main-label" for="one_ques_four">
+                                    <div class="ques-wrapper">
+                                        <span class="ques">4) When something is hard, it makes me want to spend more time on it, not less.</span>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_four" value="1"><span class="options">Disagree big tme</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_four" value="2"><span class="options">Disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_four" value="3"><span class="options">Kind of disagree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_four" value="4"><span class="options">Kind of agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_four" value="5"><span class="options">Agree</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="radio" class="partOne" name="one_ques_four" value="6"><span class="options">Agree big time</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </label>
+                                <button type="submit" name="button" id="submitOne">Next</button>
+                            </form>
+                        </div>
+                        <div class="two_wrapper quesDiv" id="ques_two">
+                                <form method="POST">
+                                    <label class="main-label" for="two_ques_one">
+                                        <div class="ques-wrapper">
+                                            <span class="ques">5) You can always learn things, but you can't really change how smart you are.</span>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_one" value="6"><span class="options">Disagree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_one" value="5"><span class="options">Disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_one" value="4"><span class="options">Kind of disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_one" value="3"><span class="options">Kind of agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_one" value="2"><span class="options">Agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_one" value="1"><span class="options">Agree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </label>
+                                    <label class="main-label" for="two_ques_two">
+                                        <div class="ques-wrapper">
+                                            <span class="ques">6) I like work the best when I can do well without putting a lot of effort in.</span>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_two" value="6"><span class="options">Disagree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_two" value="5"><span class="options">Disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_two" value="4"><span class="options">Kind of disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_two" value="3"><span class="options">Kind of agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_two" value="2"><span class="options">Agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_two" value="1"><span class="options">Agree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </label>
+                                    <label class="main-label" for="two_ques_three">
+                                        <div class="ques-wrapper">
+                                            <span class="ques">7) I like doing work that I can do perfectly almost all of the time.</span>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_three" value="6"><span class="options">Disagree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_three" value="5"><span class="options">Disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_three" value="4"><span class="options">Kind of disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_three" value="3"><span class="options">Kind of agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_three" value="2"><span class="options">Agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_three" value="1"><span class="options">Agree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </label>
+                                    <label class="main-label" for="two_ques_four">
+                                        <div class="ques-wrapper">
+                                            <span class="ques">8) When I have to put extra work in it makes me feel like I'm not as good as my peers.</span>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_four" value="6"><span class="options">Disagree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_four" value="5"><span class="options">Disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_four" value="4"><span class="options">Kind of disagree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_four" value="3"><span class="options">Kind of agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_four" value="2"><span class="options">Agree</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="input-container">
+                                                <input type="radio" class="partTwo" name="two_ques_four" value="1"><span class="options">Agree big time</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </label>
+                                    <button type="submit" name="button" id="submitTwo">Submit</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript" src="/js/checkup.js"></script>
+    </body>
+</html>
