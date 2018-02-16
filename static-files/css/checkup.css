@@ -36,11 +36,11 @@ section {
     position: absolute;
     width: 50%;
     top: 25%;
-    right: -300%;
+    right: -100%;
     color: white;
     font-size: 2pc;
     margin: auto;
-    transition: .5s;
+    transition: 1s;
 }
 #name-form h1 {
     font-size: 3pc;
@@ -187,4 +187,10 @@ button {
     color: white;
     text-align: left;
     transition: 1s;
+}
+#back {
+    float: left;
+}
+#submitTwo {
+    float: right;
 }

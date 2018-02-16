@@ -11,20 +11,21 @@ let serverResponse,
     nameInput = document.getElementById('name-input'),
     submitOne = document.getElementById('submitOne'),
     submitTwo = document.getElementById('submitTwo'),
+    back = document.getElementById('back'),
     ques_one = document.getElementById('ques_one'),
     ques_two = document.getElementById('ques_two'),
     partOneInput = document.getElementsByClassName('partOne'),
     partTwoInput = document.getElementsByClassName('partTwo');
 
 introBtn.onclick = () => {
-    introWrapper.style.left = '-300%';
+    introWrapper.style.left = '-150%';
     name_form.style.right = '25%';
 };
 
 proceed.onclick = () => {
     event.preventDefault();
     user_name = nameInput.value;
-    name_form.style.left = '-300%';
+    name_form.style.left = '-150%';
     ques_one.style.right = '15%';
 };
 
@@ -33,7 +34,7 @@ submitOne.onclick = () => {
     //Gets response from user and stores in an object
     getUserResponse1();
 
-    ques_one.style.right = '150%';
+    ques_one.style.right = '100%';
     ques_two.style.right = '0';
 };
 
@@ -49,6 +50,12 @@ submitTwo.onclick = () => {
     sendUserResponse('/checkup', userResponse);
 };
 
+back.onclick = () => {
+    event.preventDefault();
+    ques_one.style.right = '15%';
+    ques_two.style.right = '-100%';
+};
+
 let getUserResponse1 = () => {
 
     for (let i = 0; i < partOneInput.length; i++) {
@@ -57,17 +64,22 @@ let getUserResponse1 = () => {
         }
     }
 
-    Object.defineProperty(partOne, 'sum', {
-        get() {
-            let sum = 0;
+    if (partOne.sum) {
+        return;
+    } else {
 
-            for (let values of Object.values(partOne)) {
-                sum += Number(values);
+        Object.defineProperty(partOne, 'sum', {
+            get() {
+                let sum = 0;
+
+                for (let values of Object.values(partOne)) {
+                    sum += Number(values);
+                }
+
+                return sum;
             }
-
-            return sum;
-        }
-    });
+        });
+    }
 };
 
 let getUserResponse2 = () => {
@@ -80,18 +92,22 @@ let getUserResponse2 = () => {
 
     }
 
-    //define a get property
-    Object.defineProperty(partTwo, 'sum', {
-        get() {
-            let sum = 0;
+    if (partTwo.sum) {
+        return;
+    } else {
+        //define a get property
+        Object.defineProperty(partTwo, 'sum', {
+            get() {
+                let sum = 0;
 
-            for (let values of Object.values(partTwo)) {
-                sum += Number(values);
+                for (let values of Object.values(partTwo)) {
+                    sum += Number(values);
+                }
+
+                return sum;
             }
-
-            return sum;
-        }
-    });
+        });
+    }
 };
 
 let sendUserResponse = (url, data) => {

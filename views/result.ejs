@@ -5,34 +5,38 @@
         <title>Mindset Check Up</title>
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/animate.css">
+        <link rel="stylesheet" href="/css/master.css">
         <link rel="stylesheet" href="/css/result.css">
     </head>
     <body>
         <section>
-            <div class="scoreboard">
-                <h1 class="animated fadeInDown">Hey <span><%= name %>! </span>Here are your scores:</h1>
-                <table>
-                    <tbody>
-                        <tr class="animated lightSpeedIn" id="table-row-1">
-                            <td class="table-left">Part One:</td>
-                            <td class="table-right"><%= partOne %></td>
-                        </tr>
-                        <tr class="animated lightSpeedIn" id="table-row-2">
-                            <td class="table-left">Part Two:</td>
-                            <td class="table-right"><%= partTwo %></td>
-                        </tr>
-                        <tr class="animated lightSpeedIn" id="table-row-3">
-                            <td class="table-left">Total:</td>
-                            <td class="table-right"><%= grandSum %></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="container">
-                <div class="wrapper">
-                    <div class="meaning animated fadeInUp">
-                        <h1>What does this mean?</h1>
-                        <p><%= content %></p>
+            <div class="body-cover">
+                <% include partials/nav.ejs %>
+                <div class="scoreboard">
+                    <h1 class="animated fadeInDown">Well done <span><%= name %>! </span>Here are your scores:</h1>
+                    <table>
+                        <tbody>
+                            <tr class="animated lightSpeedIn" id="table-row-1">
+                                <td class="table-left">Part One:</td>
+                                <td class="table-right"><%= partOne %></td>
+                            </tr>
+                            <tr class="animated lightSpeedIn" id="table-row-2">
+                                <td class="table-left">Part Two:</td>
+                                <td class="table-right"><%= partTwo %></td>
+                            </tr>
+                            <tr class="animated lightSpeedIn" id="table-row-3">
+                                <td class="table-left">Total:</td>
+                                <td class="table-right"><%= grandSum %></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="meaning animated fadeInUp">
+                            <h1>What does this mean?</h1>
+                            <p><%= content %></p>
+                        </div>
                     </div>
                 </div>
             </div>
