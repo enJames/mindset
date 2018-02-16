@@ -105,7 +105,7 @@ module.exports = app => {
 
     });
 
-    app.post('/', jsonParser, (req, res) => {
+    app.post('/checkup', jsonParser, (req, res) => {
         let userRequest = req.body;
 
         Object.defineProperty(userRequest.partOne, 'sum', {

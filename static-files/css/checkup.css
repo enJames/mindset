@@ -16,7 +16,7 @@ body {
 section {
     text-align: center;
 }
-.intro-wrapper {
+#intro-wrapper {
     position: absolute;
     width: 60%;
     color: white;
@@ -24,42 +24,45 @@ section {
     top: 25%;
     left: 20%;
     right: 20%;
+    transition: 1s;
 }
-.intro-wrapper h1 {
+#intro-wrapper h1 {
     font-size: 3pc;
 }
-.intro-wrapper p {
+#intro-wrapper p {
     text-align: justify;
 }
-.name-form {
+#name-form {
     position: absolute;
     width: 50%;
+    top: 25%;
     right: -300%;
     color: white;
     font-size: 2pc;
     margin: auto;
+    transition: .5s;
 }
-.name-form h1 {
+#name-form h1 {
     font-size: 3pc;
 }
-.name-form p {
+#name-form p {
 }
-.name-form label {
+#name-form label {
     text-align: left;
 }
-.name-form input {
+#name-form input {
     background-color: rgb(150,150,240);
     color: rgb(0,20,40);
     padding: .5pc;
     border: none;
     border-radius: 1pc;
 }
-.name-form input:focus {
+#name-form input:focus {
     padding: .5pc .8pc;
     text-indent: .5pc;
     transition-duration: 1s;
 }
-.name-form input::placeholder {
+#name-form input::placeholder {
     color: rgba(0,20,40,.3);
     font-style: italic;
 }
@@ -70,12 +73,13 @@ section {
 .one_wrapper {
     position: absolute;
     display: block;
-    width: 83%;
+    width: 70%;
     margin: auto;
-    right: -300%;
+    right: -100%;
     font-size: 1pc;
     color: white;
     text-align: left;
+    transition: 1s;
 }
 .one_wrapper h1 {
     font-weight: bolder;
@@ -178,8 +182,9 @@ button {
     display: block;
     width: 83%;
     margin: auto;
-    right: -300%;
+    right: -100%;
     font-size: 1pc;
     color: white;
     text-align: left;
+    transition: 1s;
 }
