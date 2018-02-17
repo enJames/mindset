@@ -38,8 +38,6 @@ module.exports = app => {
         freezeTableName: true
     });
 
-    newMindsetData.sync().catch(error => console.error('Unable to create table', error));
-
     class User {
         constructor(mindsetResponse) {
             this.userName = mindsetResponse.userName;
@@ -106,6 +104,8 @@ module.exports = app => {
     });
 
     app.post('/checkup', jsonParser, (req, res) => {
+        newMindsetData.sync().catch(error => console.error('Unable to create table', error));
+
         let userRequest = req.body;
 
         Object.defineProperty(userRequest.partOne, 'sum', {
