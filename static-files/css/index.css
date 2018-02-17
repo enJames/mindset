@@ -37,7 +37,8 @@ body {
     font-size: 2pc;
     color: white;
     padding: .5pc 1pc;
-    background:
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: infinite;
 }
 .name-form {
     position: absolute;
