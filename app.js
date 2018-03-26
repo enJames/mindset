@@ -12,3 +12,5 @@ app.set('port', port);
 mainController(app);
 
 app.listen(port);
+
+export default app;
