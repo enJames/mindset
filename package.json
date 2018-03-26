@@ -6,49 +6,52 @@
     "scripts": {
         "start": "babel-node server/app.js",
         "test": "mocha --exit --compilers js:babel-core/register"
-  },
-  "repository": {
-      "type": "git",
-      "url": "git+https://github.com/enJames/mindset.git"
-  },
-  "keywords": [
-      "mindset",
-      "practice",
-      "node",
-      "express",
-      "ejs",
-      "sequelize",
-      "postgres",
-      "testing",
-      "git"
-  ],
-  "author": "King-James Enejo",
-  "license": "ISC",
-  "bugs": {
-      "url": "https://github.com/enJames/mindset/issues"
-  },
-  "homepage": "https://github.com/enJames/mindset#readme",
-  "devDependencies": {
-      "body-parser": "^1.18.2",
-      "chai": "^4.1.2",
-      "chai-http": "^3.0.0",
-      "cryptr": "^3.0.0",
-      "ejs": "^2.5.7",
-      "eslint": "^4.19.1",
-      "eslint-config-airbnb": "^16.1.0",
-      "eslint-plugin-import": "^2.9.0",
-      "eslint-plugin-jsx-a11y": "^6.0.3",
-      "eslint-plugin-react": "^7.7.0",
-      "istanbul": "^0.4.5",
-      "mocha": "^5.0.0",
-      "nodemon": "^1.14.12",
-      "nyc": "^11.6.0",
-      "pg": "^7.4.1",
-      "pg-hstore": "^2.3.2",
-      "request": "^2.83.0",
-      "sequelize": "^4.33.2"
-  },
-  "dependencies": {
-      "express": "^4.16.2"
-  }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enJames/mindset.git"
+    },
+    "keywords": [
+        "mindset",
+        "practice",
+        "node",
+        "express",
+        "ejs",
+        "sequelize",
+        "postgres",
+        "testing",
+        "git"
+    ],
+    "author": "King-James Enejo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/enJames/mindset/issues"
+    },
+    "homepage": "https://github.com/enJames/mindset#readme",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-register": "^6.26.0",
+        "body-parser": "^1.18.2",
+        "chai": "^4.1.2",
+        "chai-http": "^3.0.0",
+        "cryptr": "^3.0.0",
+        "ejs": "^2.5.7",
+        "eslint": "^4.19.1",
+        "eslint-config-airbnb": "^16.1.0",
+        "eslint-plugin-import": "^2.9.0",
+        "eslint-plugin-jsx-a11y": "^6.0.3",
+        "eslint-plugin-react": "^7.7.0",
+        "istanbul": "^0.4.5",
+        "mocha": "^5.0.0",
+        "nodemon": "^1.14.12",
+        "nyc": "^11.6.0",
+        "pg": "^7.4.1",
+        "pg-hstore": "^2.3.2",
+        "request": "^2.83.0",
+        "sequelize": "^4.33.2"
+    },
+    "dependencies": {
+        "express": "^4.16.2"
+    }
 }
