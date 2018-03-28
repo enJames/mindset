@@ -91,7 +91,7 @@ let getUserResponse1 = () => {
 
     for (let i = 0; i < partOneInput.length; i++) {
         if (partOneInput[i].checked) {
-            partOne[partOneInput[i].name] = partOneInput[i].value;
+            partOne[partOneInput[i].name] = Number(partOneInput[i].value);
         }
     }
 
@@ -118,7 +118,7 @@ let getUserResponse2 = () => {
     for (let i = 0; i < partTwoInput.length; i++) {
 
         if (partTwoInput[i].checked) {
-            partTwo[partTwoInput[i].name] = partTwoInput[i].value;
+            partTwo[partTwoInput[i].name] = Number(partTwoInput[i].value);
         }
 
     }
