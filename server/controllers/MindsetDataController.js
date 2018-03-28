@@ -1,10 +1,12 @@
 import Cryptr from 'cryptr';
-import UserMindsetData from '../models/UserMindsetData';
+import models from '../models/index';
 
+// Mindset model
+const MindsetData = models.Mindset;
 const cryptr = new Cryptr('myHashes');
 
 const MindsetDataController = {
-    create(req, res) {
+    create: (req, res) => {
         const request = req.body;
         const nameHash = cryptr.encrypt(request.userName);
 
@@ -16,7 +18,9 @@ const MindsetDataController = {
             total += value;
             return total;
         });
-        return UserMindsetData
+
+        // Create mindset data and persist to database
+        MindsetData
             .create({
                 user_name: request.userName,
                 part_one_sum,
@@ -26,7 +30,10 @@ const MindsetDataController = {
                 part_two: request.partTwo
             })
             .then(() => res.status(201).redirect(`/result?key=${nameHash}`))
-            .catch(() => res.status(500).render('error'));
+            .catch(error => console.error('There was a problem', error));
+    },
+    display: (req, res) => {
+
     }
 };
 
