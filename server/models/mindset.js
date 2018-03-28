@@ -1,5 +1,5 @@
-const UserMindsetData = (sequelize, DataTypes) => {
-    const mindsetDataTable = sequelize.define('user_mindset_data', {
+const mindsetModel = (sequelize, DataTypes) => {
+    const Mindset = sequelize.define('Mindset', {
         user_name: {
             type: DataTypes.STRING,
             allowNull: false
@@ -28,7 +28,7 @@ const UserMindsetData = (sequelize, DataTypes) => {
         freezeTableName: true
     });
 
-    return mindsetDataTable;
+    return Mindset;
 };
 
-export default UserMindsetData;
+export default mindsetModel;
