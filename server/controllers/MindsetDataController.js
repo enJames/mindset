@@ -33,6 +33,17 @@ const MindsetDataController = {
             .catch(error => console.error('There was a problem', error));
     },
     display: (req, res) => {
+        const dehashed = cryptr.decrypt(req.query.key);
+
+        MindsetData
+            .findOne({
+                where: { name: `${dehashed}` }
+            })
+            .then((data) => {
+                const queryResult = data[0][0];
+                console.log(queryResult);
+            })
+            .catch(error => console.error(error));
 
     }
 };
