@@ -23,6 +23,7 @@
     text-decoration-style: none;
     color: white;
 }
-.navbar ul li a:hover {
 
+@media screen and (max-width: 800px)  {
+    
 }

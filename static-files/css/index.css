@@ -5,12 +5,10 @@ body {
 }
 .head-wrapper{
     position: absolute;
-    width: 80%;
+    width: 100%;
     top: 30%;
-    left: 9%;
+    left: 0;
     text-align: center;
-    overflow: hidden;
-
 }
 .title-wrapper {
     width: 70%;
@@ -40,11 +38,12 @@ body {
     -webkit-animation-delay: 5s;
     -webkit-animation-iteration-count: infinite;
 }
-.name-form {
-    position: absolute;
-    top: -50%;
-}
-.wrapper {
-    overflow: hidden;
-    margin: auto;
+
+@media (max-width: 768px) {
+    .title-wrapper {
+        width: 100% !important;
+    }
+    .title-wrapper p {
+        width: 50% !important;
+    }
 }
