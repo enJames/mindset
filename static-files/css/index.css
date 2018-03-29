@@ -41,7 +41,15 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .title-wrapper, .title-wrapper p {
+    .head-wrapper{
+        width: 100%;
+        left: 0;
+
+    }
+    .title-wrapper {
         width: 90%;
+    }
+    .title-wrapper p {
+        width: 50%;
     }
 }
