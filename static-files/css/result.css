@@ -2,7 +2,7 @@ body {
     background-image: url('../img/bg_three.jpg');
     background-size: cover;
     background-attachment: fixed;
-        overflow: hidden;
+    overflow: hidden;
 }
 
 section {
