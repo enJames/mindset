@@ -4,7 +4,7 @@ const Routes = (app) => {
     app.get('/', (req, res) => res.render('index'));
     app.get('/error', (req, res) => res.render('error'));
     app.get('/checkup', (req, res) => res.render('checkup'));
-    app.get('/result', (req, res) => res.render('result', MindsetDataController.display));
+    app.get('/result', MindsetDataController.display);
     app.post('/checkup', MindsetDataController.create);
 };
 
