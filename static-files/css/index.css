@@ -39,3 +39,9 @@ body {
     -webkit-animation-delay: 5s;
     -webkit-animation-iteration-count: infinite;
 }
+
+@media screen and (max-width: 800px) {
+    .title-wrapper, .title-wrapper p {
+        width: 90%;
+    }
+}

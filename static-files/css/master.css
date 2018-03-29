@@ -23,3 +23,7 @@
     text-decoration-style: none;
     color: white;
 }
+
+@media screen and (max-width: 800px)  {
+    
+}
