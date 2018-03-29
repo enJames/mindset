@@ -5,11 +5,10 @@ body {
 }
 .head-wrapper{
     position: absolute;
-    width: 80%;
+    width: 100%;
     top: 30%;
-    left: 9%;
+    left: 0;
     text-align: center;
-
 }
 .title-wrapper {
     width: 70%;
@@ -40,16 +39,11 @@ body {
     -webkit-animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 800px) {
-    .head-wrapper{
-        width: 100%;
-        left: 0;
-
-    }
+@media (max-width: 768px) {
     .title-wrapper {
-        width: 90%;
+        width: 100% !important;
     }
     .title-wrapper p {
-        width: 50%;
+        width: 50% !important;
     }
 }
