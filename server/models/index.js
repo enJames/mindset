@@ -13,7 +13,7 @@ let sequelize;
 if (config.use_env_variable) {
     sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
-    sequelize = new Sequelize('postgres://Khing James Enejo:pass@localhost:5432/mindset_data', config);
+    sequelize = new Sequelize('postgres://Khing James Enejo:pass@localhost:5432/mindset_dev', config);
 }
 
 fs
