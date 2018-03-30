@@ -3,7 +3,7 @@ import models from '../models/index';
 import Feedback from '../data/Feedback';
 
 // Mindset model
-const MindsetData = models.mindset;
+const MindsetData = models.enejomindset;
 const cryptr = new Cryptr('myHashes');
 
 const MindsetDataController = {
