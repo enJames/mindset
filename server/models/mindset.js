@@ -1,5 +1,5 @@
 const mindsetModel = (sequelize, DataTypes) => {
-    const Mindset = sequelize.define('Mindset', {
+    const Mindset = sequelize.define('mindset', {
         user_name: {
             type: DataTypes.STRING,
             allowNull: false
