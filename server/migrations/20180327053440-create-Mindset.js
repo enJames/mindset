@@ -1,5 +1,5 @@
 module.exports = {
-    up: (queryInterface, Sequelize) => queryInterface.createTable('mindset', {
+    up: (queryInterface, Sequelize) => queryInterface.createTable('enejomindset', {
         id: {
             allowNull: false,
             autoIncrement: true,
@@ -41,5 +41,5 @@ module.exports = {
     }, {
         freezeTableName: true
     }),
-    down: queryInterface => queryInterface.dropTable('mindset')
+    down: queryInterface => queryInterface.dropTable('enejomindset')
 };
