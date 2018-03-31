@@ -11,7 +11,13 @@ const db = {};
 let sequelize;
 
 if (config.use_env_variable) {
-    sequelize = new Sequelize(process.env[config.use_env_variable], config);
+    sequelize = new Sequelize(process.env[config.use_env_variable], {
+        dialect: 'postgres',
+        protocol: 'postgres',
+        port: match[4],
+        host: match[3],
+        logging: true
+    });
 } else {
     sequelize = new Sequelize('postgres://Khing James Enejo:pass@localhost:5432/mindset_dev', config);
 }
