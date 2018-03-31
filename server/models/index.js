@@ -11,18 +11,7 @@ const db = {};
 let sequelize;
 
 if (config.use_env_variable) {
-    const dbinfo = process.env[config.use_env_variable].match(/([^:]+):\/\/([^:]+):([^@]+)@([^:]+):(\d+)\/(.+)/);
-    const {
-        first, dialect, username, password, host, port, database
-    } = dbinfo;
-
-    sequelize = new Sequelize(process.env[config.use_env_variable], {
-        dialect,
-        protocol: dialect,
-        port,
-        host,
-        logging: false
-    });
+    sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
     sequelize = new Sequelize('postgres://Khing James Enejo:pass@localhost:5432/mindset_dev', config);
 }
