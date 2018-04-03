@@ -1,0 +1,22 @@
+body {
+    background-image: url('../img/bg_three.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.head-wrapper{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 0;
+    text-align: center;
+}
+.title-wrapper {
+    width: 70%;
+    margin: auto;
+    font-size: 1.5pc;
+    color: white;
+}
+.title-wrapper h1 {
+    font-family: arial black;
+    font-size: 4pc;
+}

@@ -1,6 +1,7 @@
 body {
     background-image: url('../img/bg_one.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .head-wrapper{
@@ -11,7 +12,7 @@ body {
     text-align: center;
 }
 .title-wrapper {
-    width: 70%;
+    width: 90%;
     margin: auto;
     font-size: 1.5pc;
     color: white;
@@ -39,11 +40,30 @@ body {
     -webkit-animation-iteration-count: infinite;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 805px) {
     .title-wrapper {
         width: 100% !important;
+        font-size: 1pc;
     }
-    .title-wrapper p {
-        width: 50% !important;
+    .title-wrapper h1 {
+        font-size: 3pc;
+    }
+    .btn-home button {
+        border-radius: 2pc;
+        font-size: 1.5pc;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-wrapper {
+        width: 100% !important;
+        font-size: 1pc;
+    }
+    .title-wrapper h1 {
+        font-size: 2.5pc;
+    }
+    .btn-home button {
+        border-radius: 2pc;
+        font-size: 1pc;
     }
 }
