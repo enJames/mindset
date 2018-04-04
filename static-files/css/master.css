@@ -1,29 +1,29 @@
-.body-cover{
-    background-color: rgba(10,20,50,.7);
-    position: fixed;
-    width: 100%;
+body, html {
     height: 100%;
 }
-.navbar, .navbar-default {
-    background: none;
-    border: none;
+.cover{
+    background-image: url('../img/bg_one.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
 }
-.navbar ul {
-    float: right;
+.tint {
+    background-color: rgba(10,20,50,.7);
+    position: relative;
+    height: 100%;
+}
+ul {
     margin: 1pc;
-    color: white;
+}
+ul a {
+    color: white !important;
     font-size: 1.2pc;
 }
-.navbar ul li {
-    display: inline;
-    margin: 1pc;
-    line-height: 1pc;
-}
-.navbar ul li a {
-    text-decoration-style: none;
+.fa {
     color: white;
+    font-size: 2rem;
 }
-
-@media screen and (max-width: 800px)  {
-    
+.fa:hover {
+    transform: scale(1.2);
 }

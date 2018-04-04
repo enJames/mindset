@@ -8,13 +8,15 @@ const env = process.env.NODE_ENV || 'development'; // Use development if no envi
 const config = configJson[env];
 const db = {};
 
-let sequelize;
+const sequelize = new Sequelize('postgres://Khing James Enejo:pass@localhost:5432/mindset_dev', config);
 
-if (config.use_env_variable) {
-    sequelize = new Sequelize(process.env[config.use_env_variable]);
-} else {
-    sequelize = new Sequelize('postgres://Khing James Enejo:pass@localhost:5432/mindset_dev', config);
-}
+// let sequelize;
+//
+// if (config.use_env_variable) {
+//     sequelize = new Sequelize(process.env[config.use_env_variable]);
+// } else {
+//     sequelize = new Sequelize('postgres://Khing James Enejo:pass@localhost:5432/mindset_dev', config);
+// }
 
 fs
     .readdirSync(__dirname)
